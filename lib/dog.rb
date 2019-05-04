@@ -1,10 +1,15 @@
-class dog
-  def name=(dog_name)
-    A_Dogs_Name = dog_name
+class Dog
+ 
+  def name=(dogs_name)
+    @this_dogs_name = dogs_name
   end
-
+ 
   def name
-    A_Dogs_Name
+    @this_dogs_name
   end
-
 end
+ 
+lassie = Dog.new
+lassie.name = "Lassie"
+ 
+puts lassie.name
